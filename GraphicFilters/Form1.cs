@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace GraphicFilters // Goncharov_Filters 
+namespace GraphicFilters 
 {
     public partial class Form1 : Form
     {
@@ -72,11 +72,6 @@ namespace GraphicFilters // Goncharov_Filters
             pictureBox1.Refresh();
         }
 
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void backgroundWorker1_ProgressChanged_1(object sender, ProgressChangedEventArgs e)
         {
             progressBar1.Value = e.ProgressPercentage;
@@ -106,24 +101,23 @@ namespace GraphicFilters // Goncharov_Filters
         {
             float[,] krr = new float[3, 3];
 
-            //////zadaem matricu
+            //This matrix is the kernel. The kernel defines the transform of the image
 
             //1 line
             krr[0, 0] = 0;
             krr[0, 1] = -1;
             krr[0, 2] = 0;
-            //////2 line
+            //2 line
             krr[1, 0] = -1;
             krr[1, 1] = 5;
             krr[1, 2] = 1;
-            //////3 line
+            //3 line
             krr[2, 0] = 0;
             krr[2, 1] = -1;
             krr[2, 2] = 0;
 
             int dvf = 4;
             
-            //////////////
             
             Filter Matr = new LinearFilter(krr, dvf);
 
@@ -137,22 +131,21 @@ namespace GraphicFilters // Goncharov_Filters
 
             float[,] krr = new float[3, 3];
 
-            //////zadaem matricu
+            //This matrix is the kernel. The kernel defines the transform of the image
 
-            //1 sline
+            //1 line
             krr[0, 0] = 1;
             krr[0, 1] = 2;
             krr[0, 2] = 1;
-            //////2 line
+            //2 line
             krr[1, 0] = 2;
             krr[1, 1] = 4;
             krr[1, 2] = 2;
-            //////3 line
+            //3 line
             krr[2, 0] = 1;
             krr[2, 1] = 2;
             krr[2, 2] = 1;
 
-            //////////////
             int dvf = 16;
 
 
@@ -166,22 +159,22 @@ namespace GraphicFilters // Goncharov_Filters
         {
             float[,] krr = new float[3, 3];
 
-            //////zadaem matricu  EAGLES
+            //EAGLES
+            //This matrix is the kernel. The kernel defines the transform of the image
 
             //1 line
             krr[0, 0] = -1;
             krr[0, 1] = -1;
             krr[0, 2] = -1;
-            //////2 line
+            //2 line
             krr[1, 0] = -1;
             krr[1, 1] = 8;
             krr[1, 2] = -1;
-            //////3 line
+            //3 line
             krr[2, 0] = -1;
             krr[2, 1] = -1;
             krr[2, 2] = -1;
 
-            //////////////
             int dvf = 1;
 
 

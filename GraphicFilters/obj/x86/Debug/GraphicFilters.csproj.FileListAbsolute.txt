@@ -17,3 +17,11 @@ C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFi
 C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFilters\bin\Debug\Forma.exe
 C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFilters\bin\Debug\Forma.pdb
 C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\Forma.pdb
+C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\Forma.exe
+C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\Forma.pdb
+C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\bin\Debug\Forma.exe
+C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\bin\Debug\Forma.pdb
+C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\GraphicFilters.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\GraphicFilters.Form1.resources
+C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\Forma.Properties.Resources.resources
+C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\GraphicFilters.csproj.GenerateResource.Cache

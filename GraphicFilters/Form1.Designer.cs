@@ -39,16 +39,15 @@
             this.grayscalePALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grayscaleHDTVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sepiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.brightnessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matrixFiltersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gaussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eaglesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.artToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.histogramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.gaussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eaglesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -112,8 +111,7 @@
             this.invertToolStripMenuItem,
             this.grayscalePALToolStripMenuItem,
             this.grayscaleHDTVToolStripMenuItem,
-            this.sepiaToolStripMenuItem,
-            this.brightnessToolStripMenuItem});
+            this.sepiaToolStripMenuItem});
             this.dotFiltersToolStripMenuItem.Name = "dotFiltersToolStripMenuItem";
             this.dotFiltersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.dotFiltersToolStripMenuItem.Text = "Dot Filters";
@@ -146,12 +144,6 @@
             this.sepiaToolStripMenuItem.Text = "Sepia";
             this.sepiaToolStripMenuItem.Click += new System.EventHandler(this.sepiaToolStripMenuItem_Click);
             // 
-            // brightnessToolStripMenuItem
-            // 
-            this.brightnessToolStripMenuItem.Name = "brightnessToolStripMenuItem";
-            this.brightnessToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.brightnessToolStripMenuItem.Text = "Brightness";
-            // 
             // matrixFiltersToolStripMenuItem
             // 
             this.matrixFiltersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -165,9 +157,23 @@
             // blurToolStripMenuItem
             // 
             this.blurToolStripMenuItem.Name = "blurToolStripMenuItem";
-            this.blurToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.blurToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.blurToolStripMenuItem.Text = "Matr1";
             this.blurToolStripMenuItem.Click += new System.EventHandler(this.Matr1ToolStripMenuItem_Click);
+            // 
+            // gaussToolStripMenuItem
+            // 
+            this.gaussToolStripMenuItem.Name = "gaussToolStripMenuItem";
+            this.gaussToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.gaussToolStripMenuItem.Text = "Gauss";
+            this.gaussToolStripMenuItem.Click += new System.EventHandler(this.gaussToolStripMenuItem_Click);
+            // 
+            // eaglesToolStripMenuItem
+            // 
+            this.eaglesToolStripMenuItem.Name = "eaglesToolStripMenuItem";
+            this.eaglesToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.eaglesToolStripMenuItem.Text = "Eagles";
+            this.eaglesToolStripMenuItem.Click += new System.EventHandler(this.eaglesToolStripMenuItem_Click);
             // 
             // artToolStripMenuItem
             // 
@@ -204,20 +210,6 @@
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // gaussToolStripMenuItem
-            // 
-            this.gaussToolStripMenuItem.Name = "gaussToolStripMenuItem";
-            this.gaussToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.gaussToolStripMenuItem.Text = "Gauss";
-            this.gaussToolStripMenuItem.Click += new System.EventHandler(this.gaussToolStripMenuItem_Click);
-            // 
-            // eaglesToolStripMenuItem
-            // 
-            this.eaglesToolStripMenuItem.Name = "eaglesToolStripMenuItem";
-            this.eaglesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.eaglesToolStripMenuItem.Text = "Eagles";
-            this.eaglesToolStripMenuItem.Click += new System.EventHandler(this.eaglesToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,7 +244,6 @@
         private System.Windows.Forms.ToolStripMenuItem grayscalePALToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem grayscaleHDTVToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sepiaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem brightnessToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matrixFiltersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem artToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem histogramToolStripMenuItem;
