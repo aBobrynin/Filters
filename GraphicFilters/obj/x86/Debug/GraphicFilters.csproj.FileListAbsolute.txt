@@ -1,27 +1,15 @@
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\Forma.exe
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\Forma.pdb
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\GraphicFilters.csprojResolveAssemblyReference.cache
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\Forma.Form1.resources
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\Forma.Properties.Resources.resources
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\GraphicFilters.csproj.GenerateResource.Cache
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\GraphicFilters.Form1.resources
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\GraphicFilters\obj\x86\Debug\Forma.exe
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\GraphicFilters\obj\x86\Debug\GraphicFilters.csprojResolveAssemblyReference.cache
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\GraphicFilters\obj\x86\Debug\GraphicFilters.Form1.resources
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\GraphicFilters\obj\x86\Debug\Forma.Properties.Resources.resources
-C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\GraphicFilters\obj\x86\Debug\GraphicFilters.csproj.GenerateResource.Cache
-C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\Forma.exe
-C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\GraphicFilters.Form1.resources
-C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\Forma.Properties.Resources.resources
-C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\GraphicFilters.csproj.GenerateResource.Cache
-C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFilters\bin\Debug\Forma.exe
-C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFilters\bin\Debug\Forma.pdb
-C:\Users\Aleksandr\Downloads\Новая папка\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\Forma.pdb
-C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\Forma.exe
-C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\Forma.pdb
-C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\bin\Debug\Forma.exe
-C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\bin\Debug\Forma.pdb
-C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\GraphicFilters.csprojResolveAssemblyReference.cache
-C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\GraphicFilters.Form1.resources
-C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\Forma.Properties.Resources.resources
-C:\Users\Aleksandr\Downloads\C_Sharp\proj\GraphicFilters\GraphicFilters\obj\x86\Debug\GraphicFilters.csproj.GenerateResource.Cache
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\WindowsFormsApplication3\obj\x86\Debug\GraphicFilters.csprojResolveAssemblyReference.cache
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\WindowsFormsApplication3\obj\x86\Debug\GraphicsFilters.Form1.resources
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\WindowsFormsApplication3\obj\x86\Debug\GraphicsFilters.Properties.Resources.resources
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\WindowsFormsApplication3\obj\x86\Debug\GraphicFilters.csproj.GenerateResource.Cache
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\GraphicFilters\obj\x86\Debug\GraphicsFilters.Form1.resources
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\GraphicFilters\obj\x86\Debug\GraphicsFilters.Properties.Resources.resources
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\GraphicFilters\obj\x86\Debug\GraphicFilters.csproj.GenerateResource.Cache
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\GraphicFilters\bin\Debug\GraphicFilters.exe
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\GraphicFilters\bin\Debug\GraphicFilters.pdb
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\GraphicFilters\obj\x86\Debug\GraphicFilters.exe
+D:\лекцииИтдУчёба\компьютерная графика\проекты\image_filters\GraphicFilters\obj\x86\Debug\GraphicFilters.pdb

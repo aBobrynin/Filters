@@ -1,0 +1,16 @@
+D:\Coding\С#\WindowsFormsApplication3\WindowsFormsApplication3\bin\Release\WindowsFormsApplication3.exe
+D:\Coding\С#\WindowsFormsApplication3\WindowsFormsApplication3\bin\Release\WindowsFormsApplication3.pdb
+D:\Coding\С#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\WindowsFormsApplication3.Form1.resources
+D:\Coding\С#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\WindowsFormsApplication3.Properties.Resources.resources
+D:\Coding\С#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\WindowsFormsApplication3.csproj.GenerateResource.Cache
+D:\Coding\С#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\WindowsFormsApplication3.exe
+D:\Coding\С#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\WindowsFormsApplication3.pdb
+E:\ComputerGraphics\!мои проекты\WindowsFormsApplication3\WindowsFormsApplication3\bin\Release\WindowsFormsApplication3.exe
+E:\ComputerGraphics\!мои проекты\WindowsFormsApplication3\WindowsFormsApplication3\bin\Release\WindowsFormsApplication3.pdb
+E:\ComputerGraphics\!мои проекты\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\ResolveAssemblyReference.cache
+E:\ComputerGraphics\!мои проекты\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\WindowsFormsApplication3.Form1.resources
+E:\ComputerGraphics\!мои проекты\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\WindowsFormsApplication3.Properties.Resources.resources
+E:\ComputerGraphics\!мои проекты\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\GenerateResource.read.1.tlog
+E:\ComputerGraphics\!мои проекты\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\GenerateResource.write.1.tlog
+E:\ComputerGraphics\!мои проекты\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\WindowsFormsApplication3.exe
+E:\ComputerGraphics\!мои проекты\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Release\WindowsFormsApplication3.pdb

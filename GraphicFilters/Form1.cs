@@ -6,185 +6,325 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Collections;
+using System.Threading;
 
-namespace GraphicFilters 
+namespace GraphicsFilters
 {
     public partial class Form1 : Form
     {
+        public Bitmap image = null;
+        List<Bitmap> listB = new List<Bitmap>();
+        int listSize = -1;
+        int ls = 0;
+        bool check = false;
+
         public Form1()
         {
             InitializeComponent();
+            label1.Visible = false;
+            button1.Enabled = false;
+            button2.Enabled = false;
+            progressBar1.Visible = false;
         }
 
-        Bitmap image = null;
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        public void openToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog();
+            OpenFileDialog openDialog = new OpenFileDialog();
 
-            dialog.Filter = "All Files ( . ) | *.*";
+            openDialog.Filter = "All Files (*.*) | *.*";
 
-            if (dialog.ShowDialog() == DialogResult.OK)
+            if (openDialog.ShowDialog() == DialogResult.OK)
             {
-                image = new Bitmap(dialog.FileName);
-
+                image = new Bitmap(openDialog.FileName);
+                listB.Add(image);
+                listSize++;
                 pictureBox1.Image = image;
                 pictureBox1.Refresh();
-
             }
+
+            label1.Visible = false;
+            Console.WriteLine(listSize);
+            //Console.WriteLine(ImIndex);
         }
 
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TextToLabel(String str)
         {
-            SaveFileDialog dialog = new SaveFileDialog();
-            
-            dialog.Filter = "All Files ( . ) | *.*";
-            if (dialog.ShowDialog() == DialogResult.OK)
+            label1.Visible = true;
+            label1.Text = str;
+
+        }
+
+        private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (image != null)
             {
-                image.Save(dialog.FileName);
-            }
-        }
+                SaveFileDialog saveDialog = new SaveFileDialog();
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
+                saveDialog.Filter = "JPeg Image|*.jpg|Bitmap Image|*.bmp|Gif Image|*.gif";
+                saveDialog.Title = "Сохранить изображение";
+            
+                saveDialog.DefaultExt = "jpg";
+                saveDialog.FileName = "default.jpg";
+                saveDialog.ShowDialog();
+            
+                image.Save(saveDialog.FileName);
+            }
+            else
+            {
+                TextToLabel("Нечего сохранять");
+            }
+
+            
         }
 
         private void invertToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Filter invfilter = new InvertFilter();
-            backgroundWorker1.RunWorkerAsync(invfilter);
-
-        }
-
-          private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-            image = ((Filter)e.Argument).processImage(image,backgroundWorker1);
-            
-        }
-        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            progressBar1.Value = e.ProgressPercentage;
-        }
-
-        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            pictureBox1.Image = image;
-            pictureBox1.Refresh();
-        }
-
-        private void backgroundWorker1_ProgressChanged_1(object sender, ProgressChangedEventArgs e)
-        {
-            progressBar1.Value = e.ProgressPercentage;
-        }
-
-        private void sepiaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Filter sep = new SepiaFilter();
-            backgroundWorker1.RunWorkerAsync(sep);
+            if (image != null)
+            {
+                invertFilter filter = new invertFilter();
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+                
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
 
         }
 
         private void grayscalePALToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Filter grayscale = new GrayFilterPAL();
-            backgroundWorker1.RunWorkerAsync(grayscale);
+            if (image != null)
+            {
+                grayPalFilter filter = new grayPalFilter();
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
         }
 
         private void grayscaleHDTVToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Filter grayscale = new GrayFilterHDTV();
-            backgroundWorker1.RunWorkerAsync(grayscale);
+            if (image != null)
+            {
+                grayHdtvFilter filter = new grayHdtvFilter();
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
+        }
+
+        private void sepiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (image != null)
+            {
+                sepiaFilter filter = new sepiaFilter();
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
+        }
+
+        private void brightnessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (image != null)
+            {
+                brightFilter filter = new brightFilter();
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
+        }
+
+        private void grayWorldToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (image != null)
+            {
+                grayWFilter filter = new grayWFilter(image);
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
+        }
+
+        // Matrix filters-----------------------------------------------------------------------------------------------
+        private void lowContrastToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (image != null)
+            {
+                lowContrastFilter filter = new lowContrastFilter();
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
+        }
+
+        private void gaussianToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (image != null)
+            {
+                gaussianFilter filter = new gaussianFilter();
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
+        }
+
+        private void boxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (image != null)
+            {
+                boxFilter filter = new boxFilter();
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
+        }
+
+        private void sobelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (image != null)
+            {
+                sobelFilter filter = new sobelFilter();
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
+        }
+
+        private void embossToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (image != null)
+            {
+                embossFilter filter = new embossFilter();
+                progressBar1.Visible = true;
+                backgroundWorker1.RunWorkerAsync(filter);
+            }
+            else
+            {
+                TextToLabel("Выберите изображение");
+            }
+        }
+
+        //Threads
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            image = ((Filter)e.Argument).processImage(image, backgroundWorker1);
+        }
+
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            progressBar1.Value = e.ProgressPercentage; 
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            button1.Enabled = true;
+
+            if (check) //check Undo/Redo
+            {
+                listB.RemoveRange(ls + 1, listSize - ls);
+                listSize = ls;
+                button2.Enabled = false;
+                check = false;
+            }
+
+            listB.Add(image); 
+            listSize++;
+            ls = listSize;
+
+            pictureBox1.Image = image;
+            pictureBox1.Refresh();
+            progressBar1.Value = 0;
+            progressBar1.Visible = false;
+            label1.Visible = false;
 
         }
 
-        private void Matr1ToolStripMenuItem_Click(object sender, EventArgs e)
+        //other elements
+
+        private void label1_Click(object sender, EventArgs e)
         {
-            float[,] krr = new float[3, 3];
+            openToolStripMenuItem1_Click(sender, e);
+        }
 
-            //This matrix is the kernel. The kernel defines the transform of the image
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
-            //1 line
-            krr[0, 0] = 0;
-            krr[0, 1] = -1;
-            krr[0, 2] = 0;
-            //2 line
-            krr[1, 0] = -1;
-            krr[1, 1] = 5;
-            krr[1, 2] = 1;
-            //3 line
-            krr[2, 0] = 0;
-            krr[2, 1] = -1;
-            krr[2, 2] = 0;
-
-            int dvf = 4;
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            check = true;
             
+            if (ls > 0)
+            {
+                ls--;
+                pictureBox1.Image = listB.ElementAt(ls);
+                button2.Enabled = true;
+                image = listB.ElementAt(ls);
+            }
+
+            if (ls == 0)
+            {
+                 button1.Enabled = false;
+            }
             
-            Filter Matr = new LinearFilter(krr, dvf);
-
-            backgroundWorker1.RunWorkerAsync(Matr);
-
         }
 
-        private void gaussToolStripMenuItem_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            //GAUSS
+            button1.Enabled = true;
 
-            float[,] krr = new float[3, 3];
+            if (ls < listSize)
+            {
+                ls++;
+                pictureBox1.Image = listB.ElementAt(ls);
+            }
 
-            //This matrix is the kernel. The kernel defines the transform of the image
-
-            //1 line
-            krr[0, 0] = 1;
-            krr[0, 1] = 2;
-            krr[0, 2] = 1;
-            //2 line
-            krr[1, 0] = 2;
-            krr[1, 1] = 4;
-            krr[1, 2] = 2;
-            //3 line
-            krr[2, 0] = 1;
-            krr[2, 1] = 2;
-            krr[2, 2] = 1;
-
-            int dvf = 16;
-
-
-            Filter Matr = new LinearFilter(krr, dvf);
-
-            backgroundWorker1.RunWorkerAsync(Matr);
-
+            if (ls == listSize) button2.Enabled = false;
+           
         }
 
-        private void eaglesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            float[,] krr = new float[3, 3];
-
-            //EAGLES
-            //This matrix is the kernel. The kernel defines the transform of the image
-
-            //1 line
-            krr[0, 0] = -1;
-            krr[0, 1] = -1;
-            krr[0, 2] = -1;
-            //2 line
-            krr[1, 0] = -1;
-            krr[1, 1] = 8;
-            krr[1, 2] = -1;
-            //3 line
-            krr[2, 0] = -1;
-            krr[2, 1] = -1;
-            krr[2, 2] = -1;
-
-            int dvf = 1;
-
-
-            Filter Matr = new LinearFilter(krr, dvf);
-
-            backgroundWorker1.RunWorkerAsync(Matr);
-
+            openToolStripMenuItem1_Click(sender, e);
         }
+        
 
-     
+       
+        
+        
     }
 }
-
