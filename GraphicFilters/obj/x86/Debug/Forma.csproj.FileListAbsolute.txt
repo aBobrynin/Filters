@@ -1,0 +1,33 @@
+D:\proganie\c#\fotoshop\Forma\Forma\bin\Debug\Forma.exe
+D:\proganie\c#\fotoshop\Forma\Forma\bin\Debug\Forma.pdb
+D:\proganie\c#\fotoshop\Forma\Forma\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\proganie\c#\fotoshop\Forma\Forma\obj\x86\Debug\Forma.Form1.resources
+D:\proganie\c#\fotoshop\Forma\Forma\obj\x86\Debug\Forma.Properties.Resources.resources
+D:\proganie\c#\fotoshop\Forma\Forma\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\proganie\c#\fotoshop\Forma\Forma\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\proganie\c#\fotoshop\Forma\Forma\obj\x86\Debug\Forma.exe
+D:\proganie\c#\fotoshop\Forma\Forma\obj\x86\Debug\Forma.pdb
+I:\шарпы\proj\Forma\Forma\obj\x86\Debug\Forma.exe
+I:\шарпы\proj\Forma\Forma\obj\x86\Debug\Forma.pdb
+I:\шарпы\proj\Forma\Forma\bin\Debug\Forma.exe
+I:\шарпы\proj\Forma\Forma\bin\Debug\Forma.pdb
+I:\шарпы\proj\Forma\Forma\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\шарпы\proj\Forma\Forma\obj\x86\Debug\Forma.Form1.resources
+I:\шарпы\proj\Forma\Forma\obj\x86\Debug\Forma.Properties.Resources.resources
+I:\шарпы\proj\Forma\Forma\obj\x86\Debug\GenerateResource.read.1.tlog
+I:\шарпы\proj\Forma\Forma\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\шарпы\proj\Forma\Forma\obj\x86\Debug\Forma.exe
+E:\шарпы\proj\Forma\Forma\obj\x86\Debug\Forma.pdb
+E:\шарпы\proj\Forma\Forma\bin\Debug\Forma.exe
+E:\шарпы\proj\Forma\Forma\bin\Debug\Forma.pdb
+E:\шарпы\proj\Forma\Forma\obj\x86\Debug\Forma.Form1.resources
+E:\шарпы\proj\Forma\Forma\obj\x86\Debug\Forma.Properties.Resources.resources
+E:\шарпы\proj\Forma\Forma\obj\x86\Debug\Forma.csproj.GenerateResource.Cache
+C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\Forma.exe
+C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\Forma.pdb
+C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\bin\Debug\Forma.exe
+C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\bin\Debug\Forma.pdb
+C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\Forma.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\Forma.Form1.resources
+C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\Forma.Properties.Resources.resources
+C:\Users\Aleksandr\Downloads\Новая папка\proj\Forma\Forma\obj\x86\Debug\Forma.csproj.GenerateResource.Cache
